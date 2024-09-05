@@ -23,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent telaCalcular = new Intent(HomeActivity.this, CalculaActivity.class);
+                telaCalcular.putExtra("operacao", "somar");
                 startActivity(telaCalcular);
             }
         });
@@ -32,6 +33,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent telaCalcular = new Intent(HomeActivity.this, CalculaActivity.class);
+                telaCalcular.putExtra("operacao", "subtrair");
                 startActivity(telaCalcular);
             }
         });
@@ -41,6 +43,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent telaCalcular = new Intent(HomeActivity.this, CalculaActivity.class);
+                telaCalcular.putExtra("operacao", "multiplicar");
                 startActivity(telaCalcular);
             }
         });
@@ -50,6 +53,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent telaCalcular = new Intent(HomeActivity.this, CalculaActivity.class);
+                telaCalcular.putExtra("operacao", "dividir");
                 startActivity(telaCalcular);
             }
         });

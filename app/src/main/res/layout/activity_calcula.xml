@@ -6,4 +6,53 @@
     android:layout_height="match_parent"
     tools:context=".CalculaActivity">
 
+    <LinearLayout
+        android:layout_width="268dp"
+        android:layout_height="477dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Somar números"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <EditText
+            android:id="@+id/editTextN1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Digite o primeiro número"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextN2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:hint="Digite o segundo número"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonCalcular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Calcular" />
+
+        <Button
+            android:id="@+id/buttonVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
